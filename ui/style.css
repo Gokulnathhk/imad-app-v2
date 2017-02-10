@@ -21,4 +21,7 @@ body {
 .img-medium {
     height: 200px;
 }
-
+a{
+    font-size:200;
+    color:blue;
+}
