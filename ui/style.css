@@ -22,6 +22,18 @@ body {
     height: 200px;
 }
 a{
+    font-size:400;
+    color:blue;
+}
+p1{
     font-size:200;
     color:blue;
+}
+p2{
+    font-size:200;
+    color:green;
+}
+p3{
+    font-size:200;
+    color:red;
 }
