@@ -6,24 +6,24 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles={
-var articleOne={
-    title:'article one|tanmai gopal'
-    heading:'Article one'
-    date:'9th feb'
-    content:`<p>This text will appear in blue color.This text will appear in blue color.This text will appear in blue color.This text will appear in blue color.This text will appear in blue color.This text will appear in blue color.This text will appear in blue color</p>
+var articleOne:{
+    title:'article one|tanmai gopal',
+    heading:'Article one',
+    date:'9th feb',
+    content:'<p>This text will appear in blue color.</p>'
 },
-var articletwo={
-    title:'article two|gokulnath'
-    heading:'article two'
-    date:'9th feb'
-    content:`<p>this is article two about the concept of artificial intelligence</p>`
+var articleTwo:{
+    title:'article two|gokulnath',
+    heading:'article two',
+    date:'9th feb',
+    content:'<p>this is article two about the concept of artificial intelligence</p>'
 },
-var articleThree={
+var articleThree:{
     article:'article three|gokulnath',
     heading:'article 3',
     date:'feb 14th',
-    content:`<p>this is thrid rticle about the concept of the quantum entanglement
-    and quantum super position</p>`
+    content:'<p>this is thrid rticle about the concept of the quantum entanglement
+    and quantum super position</p>'
 }
 }
 function createTemplate(data){
@@ -33,7 +33,9 @@ function createTemplate(data){
   var content=data.content;
   var htmlTemplate=`<html>
  <head>
-    <title>${title}</title>
+    <title>
+      ${title} 
+    </title>
     <meta name="viewport" content="width-device-width,initial scale=1"/>
     <link href="ui/style.css" rel="stylesheet"/>
  </head>
