@@ -6,26 +6,25 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles={
-var articleOne:{
+ 'article-one':{
     title:'article one|tanmai gopal',
     heading:'Article one',
     date:'9th feb',
     content:'<p>This text will appear in blue color.</p>'
 },
-var articleTwo:{
+ 'article-two':{
     title:'article two|gokulnath',
     heading:'article two',
     date:'9th feb',
     content:'<p>this is article two about the concept of artificial intelligence</p>'
 },
-var articleThree:{
+ 'article-three':{
     article:'article three|gokulnath',
     heading:'article 3',
     date:'feb 14th',
-    content:'<p>this is thrid rticle about the concept of the quantum entanglement
-    and quantum super position</p>'
+    content:'<p>this is thrid rticle </p>'
 }
-}
+};
 function createTemplate(data){
   var title=data.title;
   var heading=data.heading;
@@ -61,8 +60,9 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one',function(req,res){
-   res.send(createTemplate(articleOne));
+app.get('/articleName',function(req,res){
+    var articleName=req.params.articleName;
+   res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
