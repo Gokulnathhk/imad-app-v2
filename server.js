@@ -5,17 +5,29 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-
+var articles={
 var articleOne={
-    title:'article one|tanmai gopal',
-    heading:'Article-one',
-    date:'9th feb',
-    content:`
-            <p>This text will appear in blue color.This text will appear in blue color.This text will appear in blue color.This text will appear in blue color.This text will appear in blue color.This text will appear in blue color.This text will appear in blue color.This text will appear in blue color.</p>
-            <p>This text will appear in green color.This text will appear in green color.This text will appear in green color.This text will appear in green color.This text will appear in green color.This text will appear in green color.This text will appear in green color.This text will appear in green color.</p>
-            <p>This text will appear in red color.This text will appear in red color.This text will appear in red color.This text will appear in red color.This text will appear in red color.This text will appear in red color.This text will appear in red color.This text will/p>
-    `
-};
+    title:'article one|tanmai gopal'
+    heading:'Article-one'
+    date:'9th feb'
+    content:`<p>This text will appear in blue color.This text will appear in blue color.This text will appear in blue color.This text will appear in blue color.This text will appear in blue color.This text will appear in blue color.This text will appear in blue color.This text will appear in blue color.</p>
+    <p>This text will appear in green color.This text will appear in green color.This text will appear in green color.This text will appear in green color.This text will appear in green color.This text will appear in green color.This text will appear in green color.This text will appear in green color.</p>
+            <p>This text will appear in red color.This text will appear in red color.This text will appear in red color.This text will appear in red color.This text will appear in red color.This text will appear in red color.This text will appear in rcolor.This text will/p>`
+},
+var articletwo={
+    title:'article two|gokulnath'
+    heading:'article two'
+    date:'9th feb'
+    content:`<p>this is article two about the concept of artificial intelligence</p>`
+},
+var articleThree={
+    article:'article three|gokulnath',
+    heading:'article 3',
+    date:'feb 14th',
+    content:`<p>this is thrid rticle about the concept of the quantum entanglement
+    and quantum super position</p>`
+}
+}
 function createTemplate(data){
   var title=data.title;
   var heading=data.heading;
