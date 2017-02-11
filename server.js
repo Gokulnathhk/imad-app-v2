@@ -8,11 +8,9 @@ app.use(morgan('combined'));
 var articles={
 var articleOne={
     title:'article one|tanmai gopal'
-    heading:'Article-one'
+    heading:'Article one'
     date:'9th feb'
-    content:`<p>This text will appear in blue color.This text will appear in blue color.This text will appear in blue color.This text will appear in blue color.This text will appear in blue color.This text will appear in blue color.This text will appear in blue color.This text will appear in blue color.</p>
-    <p>This text will appear in green color.This text will appear in green color.This text will appear in green color.This text will appear in green color.This text will appear in green color.This text will appear in green color.This text will appear in green color.This text will appear in green color.</p>
-            <p>This text will appear in red color.This text will appear in red color.This text will appear in red color.This text will appear in red color.This text will appear in red color.This text will appear in red color.This text will appear in rcolor.This text will/p>`
+    content:`<p>This text will appear in blue color.This text will appear in blue color.This text will appear in blue color.This text will appear in blue color.This text will appear in blue color.This text will appear in blue color.This text will appear in blue color</p>
 },
 var articletwo={
     title:'article two|gokulnath'
