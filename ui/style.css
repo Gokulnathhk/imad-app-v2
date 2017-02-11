@@ -9,7 +9,7 @@ body {
 }
 
 .text-big {
-    font-size: 100%;
+    font-size: 50%;
     color:blue;
     text-decoration:underline;
 }
@@ -21,14 +21,7 @@ body {
 .img-medium {
     height: 200px;
 }
-a{
-    font-size:400;
-    color:blue;
-}
-p{
-    font-size:200;
-    color:blue;
-}
+
 .container{
             color:blue;
             font-family:san-serif;
