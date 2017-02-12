@@ -10,7 +10,7 @@ var articles={
     title:'article one|gokulnath',
     heading:'Article one',
     date:'9th feb',
-    content:'<p>This text will appear in blue color.</p>'
+    content:'<p>This text appear in blue color.</p>'
 },
  'article-two':{
     title:'article two|gokulnath',
