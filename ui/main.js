@@ -4,11 +4,11 @@ alert("hi! i'm gokulnath");
 
 //adding onclick image property
 var img=document.getElementById("dino");
-var marginleft=0;
+var marginLeft=0;
 
 function moveright(){
-    marginleft=marginleft+10;
-    img.style.marginleft=marginleft+'px';
+    marginLeft=marginleft+10;
+    img.style.marginLeft=marginLeft+'px';
 }
 img.onclick=function(){
 var interval=setInterval(moveright,100);
