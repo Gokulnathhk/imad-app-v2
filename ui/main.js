@@ -1,7 +1,4 @@
 console.log('Loaded!');
-//alert box
-alert("hi! i'm gokulnath");
-
 //adding onclick image property
 var img=document.getElementById("dino");
 
