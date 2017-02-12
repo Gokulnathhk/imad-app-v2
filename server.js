@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 var articles={
  'article-one':{
-    title:'article one|tanmai gopal',
+    title:'article one|gokulnath',
     heading:'Article one',
     date:'9th feb',
     content:'<p>This text will appear in blue color.</p>'
