@@ -1,17 +1,26 @@
 //counter code
 
-//gonna call the counter variable
-
-//i'm gonna rock at it
-
-var counter=0;
 var button=document.getElementById("counter");
+
 button.onClick=function(){
-    //request for counter end point.
-    //store it correct span variable 
-    //render the variable
-    counter=counter+1;
-    var span=document.getElementById("count");
-    span.innerHTML=count.toString();
-    
+    //create the request
+     var request=new XMLHttpRequest();
+     
+     //capture the response
+     request.onreadystatechange=function(){
+         if(request.readystate==XMLHttprequest.DONE){
+            //take some actions
+            if(request.status==200){
+            counter=request.responseText;
+            var span=document.getElementById("counter");
+            span.innerHTML=count.toString();
+            }
+     
+            }
+            //not done yet
+         };
+   
+    //make the request
+    request.open(GET,"http://gokulnathhk.imad.hasura-app.io",true);
+    request.send(null);
 };
