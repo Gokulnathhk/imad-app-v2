@@ -21,8 +21,7 @@ button.onClick=function(){
    //render the request
    request.open('GET','http://gokulnathhk.imad.hasura-app.io/counter',true);    
    request.send(null);
-   var nameInput=document.getElementById('name');
-var name=nameInput.value;
+  
 var submit=document.getElementById('submit');
 submit.onClick=function(){
           //make a request to the server amnd the current entered name
@@ -47,6 +46,9 @@ submit.onClick=function(){
 };
 
 };
+
+ var nameInput=document.getElementById('name');
+var name=nameInput.value;
 
 request.open('GET','http://gokulnathhk.imad.hasura-app.io/submit-name?='+name,true);
 request.send(null);
